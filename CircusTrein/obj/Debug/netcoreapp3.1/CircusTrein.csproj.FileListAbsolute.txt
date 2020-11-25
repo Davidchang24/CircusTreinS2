@@ -1,0 +1,12 @@
+/Users/davidchang/Projects/CircusTrein/CircusTrein/bin/Debug/netcoreapp3.1/CircusTrein.deps.json
+/Users/davidchang/Projects/CircusTrein/CircusTrein/bin/Debug/netcoreapp3.1/CircusTrein.runtimeconfig.json
+/Users/davidchang/Projects/CircusTrein/CircusTrein/bin/Debug/netcoreapp3.1/CircusTrein.runtimeconfig.dev.json
+/Users/davidchang/Projects/CircusTrein/CircusTrein/bin/Debug/netcoreapp3.1/CircusTrein.dll
+/Users/davidchang/Projects/CircusTrein/CircusTrein/bin/Debug/netcoreapp3.1/CircusTrein.pdb
+/Users/davidchang/Projects/CircusTrein/CircusTrein/obj/Debug/netcoreapp3.1/CircusTrein.csprojAssemblyReference.cache
+/Users/davidchang/Projects/CircusTrein/CircusTrein/obj/Debug/netcoreapp3.1/CircusTrein.AssemblyInfoInputs.cache
+/Users/davidchang/Projects/CircusTrein/CircusTrein/obj/Debug/netcoreapp3.1/CircusTrein.AssemblyInfo.cs
+/Users/davidchang/Projects/CircusTrein/CircusTrein/obj/Debug/netcoreapp3.1/CircusTrein.csproj.CoreCompileInputs.cache
+/Users/davidchang/Projects/CircusTrein/CircusTrein/obj/Debug/netcoreapp3.1/CircusTrein.dll
+/Users/davidchang/Projects/CircusTrein/CircusTrein/obj/Debug/netcoreapp3.1/CircusTrein.pdb
+/Users/davidchang/Projects/CircusTrein/CircusTrein/obj/Debug/netcoreapp3.1/CircusTrein.genruntimeconfig.cache
