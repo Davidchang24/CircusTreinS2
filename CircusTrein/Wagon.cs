@@ -15,7 +15,7 @@ namespace CircusTrein
 
         public bool IsAnimalAddable(Animal animal)
         {
-            if (IsCompatibleAnimalWagon(animal) && IsCorrectAnimalSizeForWagon(animal))
+            if (IsCorrectAnimalSizeForWagon(animal) && IsCompatibleAnimalWagon(animal))
             {
                 _animals.Add(animal);
                 WagonUsedSize += (int)animal.AnimalSize;
@@ -38,12 +38,12 @@ namespace CircusTrein
         public bool IsCompatibleAnimalWagon(Animal animal)
         {
             bool IsCompatible = true;
-            bool IsNotCompatible = false;
+
             foreach (Animal animalWagon in _animals)
             {
-                if (animal.IsAnimalDangerous(animalWagon))
+                if (animal.IsAnimalThreat(animalWagon))
                 {
-                    return IsNotCompatible;
+                    IsCompatible = false;
                     break;
                 }
             }

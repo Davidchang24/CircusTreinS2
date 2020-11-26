@@ -3,32 +3,28 @@ namespace CircusTrein
 {
     public class Animal
     {
-        public string AnimalName { get; set; }
         public AnimalSize AnimalSize { get; set; }
         public AnimalFood AnimalFood { get; set; }
 
 
-        public Animal(string AnimalName, AnimalSize animalSize, AnimalFood animalFood)
+        public Animal(AnimalSize animalSize, AnimalFood animalFood)
         {
-            this.AnimalName = AnimalName;
             AnimalSize = animalSize;
             AnimalFood = animalFood;
         }
 
-        public bool IsAnimalDangerous(Animal animal)
+        public bool IsAnimalThreat(Animal animal)
         {
-            if (animal.AnimalFood == AnimalFood.Carnivore && animal.AnimalSize >= animal.AnimalSize ||
-                animal.AnimalFood == AnimalFood.Carnivore && animal.AnimalSize <= animal.AnimalSize)
+            if (animal.AnimalFood == AnimalFood.Carnivore && animal.AnimalSize >= AnimalSize || AnimalFood == AnimalFood.Carnivore && animal.AnimalSize <= AnimalSize)
                 return true;
-            else
-                return false;
+            return false;
         }
     }
     public enum AnimalSize
     {
         Small = 1,
-        Medium = 2,
-        Large = 3
+        Medium = 3,
+        Large = 5
     }
 
     public enum AnimalFood

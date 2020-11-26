@@ -5,36 +5,32 @@ namespace CircusTrein
     public class Train
     {
         private List<Wagon> _wagons;
+        private bool succes;
         public Train()
         {
             _wagons = new List<Wagon>();
         }
 
-        public void PutAnimalsInTrain(List<Animal> animals)
+        public void PutAnimalsInWagon(List<Animal> animals)
         {
-            int wagonIndex = 0;
-
-            while (animals.Count != 0)
+            foreach (Animal animal in animals)
             {
-                AddWagon(wagonIndex, animals[0]);
-                Wagon wagon = _wagons[wagonIndex];
-                animals.RemoveAt(0);
-
-                for (int i = animals.Count - 1; i >= 0; i--)
+                succes = false;
+                foreach (Wagon wagon in _wagons)
                 {
-                    Animal animal = animals[i];
-                    if (wagon.IsAnimalAddable(animal))
+                    if (wagon.IsAnimalAddable(animal) == true)
                     {
-                        animals.Remove(animal);
+                        succes = true;
+                        break;
                     }
                 }
-                wagonIndex += 1;
+
+                if (succes == false)
+                {
+                    Wagon wagon = new Wagon();
+                    _wagons.Add(wagon);
+                }
             }
-        }
-        private void AddWagon(int wagonIndex, Animal animal)
-        {
-            _wagons.Add(new Wagon());
-            _wagons[wagonIndex].IsAnimalAddable(animal);
         }
 
         public IReadOnlyList<Wagon> GetWagons()
