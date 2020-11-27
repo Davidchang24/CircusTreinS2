@@ -1,25 +1,7 @@
 ﻿using System;
+
 namespace CircusTrein
 {
-    public class Animal
-    {
-        public AnimalSize AnimalSize { get; set; }
-        public AnimalFood AnimalFood { get; set; }
-
-
-        public Animal(AnimalSize animalSize, AnimalFood animalFood)
-        {
-            AnimalSize = animalSize;
-            AnimalFood = animalFood;
-        }
-
-        public bool IsAnimalThreat(Animal animal)
-        {
-            if (animal.AnimalFood == AnimalFood.Carnivore && animal.AnimalSize >= AnimalSize || AnimalFood == AnimalFood.Carnivore && animal.AnimalSize <= AnimalSize)
-                return true;
-            return false;
-        }
-    }
     public enum AnimalSize
     {
         Small = 1,
@@ -31,5 +13,30 @@ namespace CircusTrein
     {
         Carnivore = 'm',
         Herbivore = 'p',
+    }
+    public class Animal
+    {
+        // Propterties
+        public string AnimalName { get; set; }
+        public AnimalSize AnimalSize { get; set; }
+        public AnimalFood AnimalFood { get; set; }
+
+        // Constructor
+        public Animal(string animalName, AnimalSize animalSize, AnimalFood animalFood)
+        {
+            this.AnimalName = animalName;
+            AnimalSize = animalSize;
+            AnimalFood = animalFood;
+        }
+
+        // Methods
+        public bool IsAnimalThreatOrThreatened(Animal animal)
+        {
+            if (animal.AnimalFood == AnimalFood.Carnivore && animal.AnimalSize >= AnimalSize || AnimalFood == AnimalFood.Carnivore && animal.AnimalSize <= AnimalSize)
+                return true;
+            return false;
+        }
+
+        public override string ToString() => AnimalName + " " + AnimalSize + " " + AnimalFood;
     }
 }

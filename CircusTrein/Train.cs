@@ -1,16 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+
 namespace CircusTrein
 {
     public class Train
     {
+        // Propterties
         private List<Wagon> _wagons;
         private bool succes;
+
+        // Constructor
         public Train()
         {
             _wagons = new List<Wagon>();
         }
 
+        // Methods
         public void PutAnimalsInWagon(List<Animal> animals)
         {
             foreach (Animal animal in animals)
@@ -24,7 +29,6 @@ namespace CircusTrein
                         break;
                     }
                 }
-
                 if (succes == false)
                 {
                     Wagon wagon = new Wagon();
