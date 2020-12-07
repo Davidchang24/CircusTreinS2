@@ -11,17 +11,17 @@ namespace CircusTrein
 
     public enum AnimalFood
     {
-        Carnivore = 'm',
-        Herbivore = 'p',
+        Carnivore,
+        Herbivore
     }
+
     public class Animal
     {
         // Propterties
-        public string AnimalName { get; set; }
-        public AnimalSize AnimalSize { get; set; }
-        public AnimalFood AnimalFood { get; set; }
+        public string AnimalName { get; private set; }
+        public AnimalSize AnimalSize { get; private set; }
+        public AnimalFood AnimalFood { get; private set; }
 
-        // Constructor
         public Animal(string animalName, AnimalSize animalSize, AnimalFood animalFood)
         {
             this.AnimalName = animalName;
@@ -29,8 +29,7 @@ namespace CircusTrein
             AnimalFood = animalFood;
         }
 
-        // Methods
-        public bool IsAnimalThreatOrThreatened(Animal animal)
+        public bool CheckIfAnimalIsDangerous(Animal animal)
         {
             if (animal.AnimalFood == AnimalFood.Carnivore && animal.AnimalSize >= AnimalSize || AnimalFood == AnimalFood.Carnivore && animal.AnimalSize <= AnimalSize)
                 return true;

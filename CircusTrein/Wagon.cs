@@ -5,19 +5,14 @@ namespace CircusTrein
 {
     public class Wagon
     { 
-        // Properties
         private List<Animal> _animals;
         private int WagonSize { get; } = 10;
         private int WagonUsedSize { get; set; } = 0;
-        public int WagonCount { get; set; }
-
-        // Constructor
         public Wagon()
         {
             _animals = new List<Animal>();
         }
 
-        // Methods
         public bool IsAnimalAddable(Animal animal)
         {
             if (IsCorrectAnimalSizeForWagon(animal) && IsCompatibleAnimalWagon(animal))
@@ -44,7 +39,7 @@ namespace CircusTrein
 
             foreach (Animal animalWagon in _animals)
             {
-                if (animal.IsAnimalThreatOrThreatened(animalWagon))
+                if (animal.CheckIfAnimalIsDangerous(animalWagon))
                 {
                     IsCompatible = false;
                     break;
