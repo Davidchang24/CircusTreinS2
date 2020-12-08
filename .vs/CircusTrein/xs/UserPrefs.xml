@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{9A7BA6D8-4622-46CD-BD52-808888BE65F7}|Default">
   <MonoDevelop.Ide.ItemProperties.CircusTrein PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UnitTests/WagonTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UnitTests/TrainTest.cs">
     <Files>
       <File FileName="UnitTests/AnimalTest.cs" Line="1" Column="1" />
       <File FileName="UnitTests/WagonTest.cs" Line="8" Column="2" />
-      <File FileName="CircusTrein/Wagon.cs" Line="1" Column="1" />
+      <File FileName="CircusTrein/Wagon.cs" />
+      <File FileName="UnitTests/TrainTest.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,21 +13,14 @@
           <Node name="CircusTrein" expanded="True">
             <Node name="CircusTrein" expanded="True" />
             <Node name="UnitTests" expanded="True">
-              <Node name="WagonTest.cs" selected="True" />
+              <Node name="TrainTest.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="CircusTrein" expanded="True">
-            <Node name="UnitTests" expanded="True">
-              <Node name="Circustrein.Tests" expanded="True">
-                <Node name="WagonTests" selected="True" />
-              </Node>
-              <Node name="UnitTests" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="CircusTrein" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
