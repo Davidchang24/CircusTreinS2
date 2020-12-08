@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HYppteOwd/nnDpdLUn/52IaUEBXMgkU5T/jqkR1sPjcUVJscZIcN0l6573MxQv7RVi4tO9p/DDsnTcKL6zT5rA==",
+  "dgSpecHash": "I6+HmdKuhYENXYp/Shj3KM0GBfm+hg/2QaTXNj03c2t57+no2sShZpPKt9DrQ7mjj5HWuhw9gEGlBhxvFV5Y/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\david\\Documents\\Github\\CircusTreinS2\\CircusTrein\\CircusTrein.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/davidchang/Documents/Github/CircusTreinS2/CircusTrein/CircusTrein.csproj",
+  "expectedPackageFiles": [
+    "/Users/davidchang/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.8/microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
+  ],
   "logs": []
 }
