@@ -1,2 +1,2 @@
 # CircusTreinS2
-Algorithmic Challenge 
+Algorithmic Challenge Fontys S2
